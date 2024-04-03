@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+*{
+    margin:0; 
+}
+@keyframes linkSelectA{
+    0%{
+        transform: scale(1); 
+    }
+    25%{
+        transform: scale(1.2);
+        color:#5f6f52ff;   
+    }
+    100%{
+        transform: scale(1);
+        color:#5f6f52ff;
+    }
+}
+@keyframes linkSelectNav{
+    0%{
+
+    }
+    100%{
+        background-color: #fefae0ff;
+    }
+}
+nav{
+    justify-content: space-between; 
+    display: flex;
+}
+#menu>a{
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fefae0ff;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+#menu{
+    background-color: #272727;
+}
+
+#head{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+}
+#logo>p{
+    margin-bottom: 0;
+    margin-top: 1vh;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    color: #fefae0ff;
+    font-size: 8.5vh;
+}
+#logo>div{
+    margin-top: 2.5vh;
+}
+
+#head{
+    background-color: #5f6f52ff;
+    height: 12vh;
+}
+#link1{
+    animation-duration: 1s;
+}
+#link1:hover{
+    animation: linkSelectA;
+    animation-duration: 1s;
+    color:#5f6f52ff;
+}
+#link2:hover{
+    animation: linkSelectA;
+    animation-duration: 1s;
+    color:#5f6f52ff;
+}
+#link3:hover{
+    animation: linkSelectA;
+    animation-duration: 1s;
+    color:#5f6f52ff;
+}
+#link1{
+    width:25%;
+}
+#link2{
+    width:25%;
+}
+#link3{
+    width:50%;
+}
+#link1:hover{
+    animation: linkSelectNav;
+    width:25%;
+    animation-duration: 1s;
+    background-color: #fefae0ff;
+}
+#link2:hover{
+    animation: linkSelectNav;
+    width:25%;
+    animation-duration: 1s;
+    background-color: #fefae0ff;
+}
+#link3:hover{
+    animation: linkSelectNav;
+    width:50%;
+    animation-duration: 1s;
+    background-color: #fefae0ff;
+}
+#sep{
+    width: 100%;
+    height: 4vh;
+    background-color: #272727;
+    margin-top: -3.5vh;
+}
+#botonesTienda{
+    display: flex;
+    justify-content: space-between;
+    background-color: #5f6f52ff;
+
+}
+#botonesTienda>button{
+    width: 33%;
+    height:8vh;
+    color: #fefae0ff;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+#botonesTienda> button:hober{
+    color: #5f6f52ff;
+    animation: linkSelectA;
+    animation-duration: 1s;
+}
+#tiendaBack{
+    background-image: url(FONDOPAGINA1.png);
+    height: 300vh;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    display: flex;
+    margin-top: -0px;
+    justify-content: center;
+    align-items: center;
+}
+#tiendaBack>#tiendaItems{
+    display: flex;
+    width: 85%;
+    height: 300vh;
+    background-color: #27272783;
+    backdrop-filter: blur(4px);
+}
