@@ -26,6 +26,7 @@
         background-color: #fefae0ff;
     }
 }
+/*Codigo de el index*/
 nav{
     justify-content: space-between; 
     display: flex;
@@ -146,8 +147,117 @@ nav{
 }
 #tiendaBack>#tiendaItems{
     display: flex;
-    width: 85%;
+    width: 98%;
     height: 300vh;
     background-color: #27272783;
     backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#objetoVenta1{
+    display: flex;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 4vh;
+    color: #fefae0ff;
+    width: 85vh;
+    height: 50vh;
+    background-color: #272727;
+    border-radius: 5%;
+}
+#objetoVenta1>img{
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+#TextoItem1{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: right;
+}
+#TextoItem1>h1{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh ;
+}
+#TextoItem1>p{
+    color: #ff407d;
+}
+#TextoItem1>a{
+    display: flex;
+    background-color: #ff407d;
+    color: #272727;
+    align-self: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 30vh;
+}
+#footer{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    font-size: 3vh;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/*Codigo de Carrito de compras*/
+#fondoCarrito{
+    background-color: #fefae0ff;
+    display: flex;
+    width: 100%;
+    height: 150vh;
+}
+#izquierdaCarrito{
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #2727273a;
+    height: 70vh;
+    width: 60vw;
+    border: 2px solid #272727;
+
+}
+#derechaCarrito{
+    display: flex;
+    width: 40vw;
+    height: 60vh;
+    flex-direction: column;
+}
+#derechaCarrito>#totalCarrito{
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #5f6f52ff;
+    color: #fefae0ff;
+    width: 40vw;
+    height: 10vh;
+    margin-bottom: 3vh;
+
+}
+#derechaCarrito>#totalCarrito>h2{
+    text-align: center;
+}
+#derechaCarrito>#totalCarrito>p{
+    margin-left: 2vw;
+}
+#derechaCarrito>#cuestionarioCarrito{
+    background-color: #5f6f52ff;
+    color: #fefae0ff;
+    width: 40vw;
+    height: 60vh;
+}
+#cuestionarioCarrito{
+    display: flex;
+    flex-direction:column ;
+
+}
+#cuestionarioCarrito>input[type="text"], textarea {
+    width: 25vw;
+    background-color : #272727; 
+    color: #5f6f52ff;
+
+  
 }
