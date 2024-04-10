@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 *{
     margin:0; 
@@ -137,7 +138,7 @@ nav{
 }
 #tiendaBack{
     background-image: url(FONDOPAGINA1.png);
-    height: 300vh;
+    height: 200vh;
     background-repeat:no-repeat ;
     background-size: cover;
     display: flex;
@@ -148,7 +149,7 @@ nav{
 #tiendaBack>#tiendaItems{
     display: flex;
     width: 98%;
-    height: 300vh;
+    height: 200vh;
     background-color: #27272783;
     backdrop-filter: blur(4px);
     justify-content: space-around;
@@ -203,28 +204,49 @@ nav{
     font-size: 3vh;
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
 }
-
+#footer1{
+    width: 33%;
+    height: 30vh;
+    
+}
+#footer2{
+    width: 33%;
+    height: 30vh;
+    border-left:2px solid white;
+    border-right:2px solid white;
+}
+#footer3{
+    width: 33%;
+    height: 30vh;
+}
 /*Codigo de Carrito de compras*/
 #fondoCarrito{
     background-color: #fefae0ff;
     display: flex;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
 }
 #izquierdaCarrito{
-    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
+    font-style: normal;
     background-color: #2727273a;
-    height: 70vh;
-    width: 60vw;
+    height: 65vh;
+    width: 55vw;
     border: 2px solid #272727;
+    margin: 3%;
 
 }
 #derechaCarrito{
+    margin-top: 3%;
+    margin-right: 2vw;
     display: flex;
-    width: 40vw;
-    height: 60vh;
+    width: 37vw;
+    height: 65vh;
     flex-direction: column;
 }
 #derechaCarrito>#totalCarrito{
@@ -232,7 +254,7 @@ nav{
     font-optical-sizing: auto;
     background-color: #5f6f52ff;
     color: #fefae0ff;
-    width: 40vw;
+    width: 37vw;
     height: 10vh;
     margin-bottom: 3vh;
 
@@ -241,13 +263,15 @@ nav{
     text-align: center;
 }
 #derechaCarrito>#totalCarrito>p{
-    margin-left: 2vw;
+    text-align: center;
 }
 #derechaCarrito>#cuestionarioCarrito{
     background-color: #5f6f52ff;
     color: #fefae0ff;
-    width: 40vw;
+    width: 37vw;
     height: 60vh;
+    display: flex;
+    align-items: center;
 }
 #cuestionarioCarrito{
     display: flex;
@@ -260,4 +284,57 @@ nav{
     color: #5f6f52ff;
 
   
+}
+/*Codigo Pagina de Items*/
+#fondoItem1{
+    background-color: #fefae0ff;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+#DerechaPaginaItem1{
+    display: flex;
+    width: 35%;
+    height: 70vh;
+    background-color: #27272760;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+}
+#textoPaginaItem1{
+    margin-left: -3%;
+    background-color: #5f6f52ff;
+    width: 63%;
+    height: 35vh;
+    color: #fefae0ff;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    align-items: center;
+    
+}
+#textoPaginaItem1>h1{
+    margin-top:5% ;
+    margin-left:5% ;
+    margin-right: 5%;
+}
+#textoPaginaItem1>h3{
+    margin-left:5% ;
+    margin-right: 5%;
+}
+#textoPaginaItem1>h2{
+    margin-left:5% ;
+    margin-right: 5%;
+}
+#textoPaginaItem1>button{
+    margin-left:5% ;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+#fondoCarrucel2PaginaItem1{
+    background-color: black;
+    height: 40vh;
+    width: 100%;
+    border-bottom: 2px solid white;
+    color: white;
 }
