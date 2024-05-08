@@ -58,6 +58,7 @@ nav{
     font-optical-sizing: auto;
     color: #fefae0ff;
     font-size: 8.5vh;
+    min-width: 200px;
 }
 #logo>div{
     margin-top: 2.5vh;
@@ -168,6 +169,7 @@ nav{
     background-color: #272727;
     border-radius: 5%;
     margin-top: 3vh;
+    min-width: 400px;
 }
 #objetoVenta1>img{
     display: flex;
