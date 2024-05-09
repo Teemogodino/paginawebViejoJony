@@ -107,8 +107,9 @@ nav {
     font-optical-sizing: auto;
     font-size: x-large;
     color: #fefae0ff;
-    width: 45%; 
+    width: 55vh; 
     min-width: 200px;
+    max-width: 60vw;
     height: 30vh;
     background-color: #272727;
     border-radius: 5%;
@@ -125,7 +126,11 @@ nav {
     align-items: start;
 }
 #TextoItem1 > h1 {
-    margin-bottom: 2.5vh;
+    margin-bottom: 1vh;
+    font-size: medium;
+}
+#TextoItem1 > h2 {
+    margin-bottom: 1vh;
     font-size: medium;
 }
 #TextoItem1 > p {
@@ -140,6 +145,7 @@ nav {
     justify-content: center;
     text-decoration: none;
     width: 10vw;
+    min-width: 100px;
     font-size: x-large;
 }
 #footer {
