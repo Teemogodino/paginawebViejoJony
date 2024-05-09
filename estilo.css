@@ -29,11 +29,11 @@
     }
 }
 /*Codigo de el index*/
-nav{
-    justify-content: space-between; 
+nav {
+    justify-content: space-between;
     display: flex;
 }
-#menu>a{
+#menu > a {
     justify-content: space-between;
     text-decoration: none;
     color: #fefae0ff;
@@ -41,17 +41,18 @@ nav{
     font-optical-sizing: auto;
     text-align: center;
 }
-#menu{
+#menu {
     background-color: #272727;
 }
-
-#head{
+#head {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: #5f6f52ff;
+    height: 12vh;
 }
-#logo>p{
+#logo > p {
     margin-bottom: 0;
     margin-top: 1vh;
     font-family: "Fira Code", monospace;
@@ -60,143 +61,78 @@ nav{
     font-size: 8.5vh;
     min-width: 200px;
 }
-#logo>div{
+#logo > div {
     margin-top: 2.5vh;
 }
-
-#head{
-    background-color: #5f6f52ff;
-    height: 12vh;
-}
-#link1{
-    animation-duration: 1s;
-}
-#link1:hover{
-    animation: linkSelectA;
-    animation-duration: 1s;
-    color:#5f6f52ff;
-}
-#link2:hover{
-    animation: linkSelectA;
-    animation-duration: 1s;
-    color:#5f6f52ff;
-}
-#link3:hover{
-    animation: linkSelectA;
-    animation-duration: 1s;
-    color:#5f6f52ff;
-}
-#link1{
-    width:25%;
-}
-#link2{
-    width:25%;
-}
-#link3{
-    width:50%;
-}
-#link1:hover{
-    animation: linkSelectNav;
-    width:25%;
-    animation-duration: 1s;
-    background-color: #fefae0ff;
-}
-#link2:hover{
-    animation: linkSelectNav;
-    width:25%;
-    animation-duration: 1s;
-    background-color: #fefae0ff;
-}
-#link3:hover{
-    animation: linkSelectNav;
-    width:50%;
-    animation-duration: 1s;
-    background-color: #fefae0ff;
-}
-#sep{
+#sep {
     width: 100%;
     height: 4vh;
     background-color: #272727;
     margin-top: -3.5vh;
 }
-#botonesTienda{
+#botonesTienda {
     display: flex;
     justify-content: space-between;
     background-color: #5f6f52ff;
-
 }
-#botonesTienda>button{
+#botonesTienda > button {
     width: 33%;
-    height:8vh;
+    height: 8vh;
     color: #fefae0ff;
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
     text-align: center;
 }
-#botonesTienda> button:hober{
-    color: #5f6f52ff;
-    animation: linkSelectA;
-    animation-duration: 1s;
-}
-#tiendaBack{
+#tiendaBack {
     background-image: url(Imagenes/FONDOPAGINA1.png);
-    height: 125vh;
-    background-repeat:no-repeat ;
+    height: auto; 
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    margin-top: -0px;
     justify-content: center;
     align-items: center;
 }
-#tiendaBack>#tiendaItems{
+#tiendaBack > #tiendaItems {
     display: flex;
     width: 98%;
-    height: 125vh;
+    height: auto; 
     background-color: #27272783;
     backdrop-filter: blur(4px);
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-#objetoVenta1{
+#objetoVenta1 {
     display: flex;
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
     font-size: x-large;
     color: #fefae0ff;
-    width: 30vw;
+    width: 45%; 
+    min-width: 200px;
     height: 30vh;
     background-color: #272727;
     border-radius: 5%;
     margin-top: 3vh;
-    min-width: 400px;
 }
-#objetoVenta1>img{
+#objetoVenta1 > img {
     display: flex;
-    margin-top: 2vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
-    margin-top: 3vh;
+    margin: 3vh 2vh;
 }
-#categoriaItem1{
-    color: #b3b3b3;
-    font-size: small;
-}
-#TextoItem1{
+#TextoItem1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:start;
+    align-items: start;
 }
-#TextoItem1>h1{
-    margin-bottom: 2.5vh ;
-    font-size:medium;
+#TextoItem1 > h1 {
+    margin-bottom: 2.5vh;
+    font-size: medium;
 }
-#TextoItem1>p{
+#TextoItem1 > p {
     color: #ff407d;
     font-size: medium;
 }
-#TextoItem1>a{
+#TextoItem1 > a {
     display: flex;
     background-color: #ff407d;
     color: #272727;
@@ -206,10 +142,10 @@ nav{
     width: 10vw;
     font-size: x-large;
 }
-#footer{
+#footer {
     display: flex;
     width: 100%;
-    height: 35vh;
+    height: auto; 
     background-color: black;
     color: white;
     font-size: 3vh;
@@ -219,29 +155,42 @@ nav{
     align-items: center;
     flex-direction: row;
 }
-#footer1{
-    width: 33%;
-    height: 30vh;
-    
+#footer1,
+#footer2 {
+    height: auto;
 }
-#footer2{
+#footer2 {
     width: 66%;
-    height: 28vh;
-    border-left:2px solid white;
+    height: auto;
+    border-left: 2px solid white;
 }
-#footer2>h3{
-
+#footer2 > h3 {
     height: 2vh;
-
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo > p {
+        font-size: 6vh;
+    }
+    #botonesTienda > button {
+        width: 100%;
+    }
+    #objetoVenta1 {
+        width: 90%;
+    }
 }
 /*Codigo de Carrito de compras*/
-#fondoCarrito{
+#fondoCarrito {
     background-color: #fefae0ff;
     display: flex;
     width: 100%;
     height: 100vh;
 }
-#izquierdaCarrito{
+#izquierdaCarrito {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -250,9 +199,8 @@ nav{
     width: 55vw;
     border: 2px solid #272727;
     margin: 3%;
-
 }
-#derechaCarrito{
+#derechaCarrito {
     margin-top: 3%;
     margin-right: 2vw;
     display: flex;
@@ -260,7 +208,7 @@ nav{
     height: 65vh;
     flex-direction: column;
 }
-#derechaCarrito>#totalCarrito{
+#derechaCarrito > #totalCarrito {
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
     background-color: #5f6f52ff;
@@ -268,15 +216,14 @@ nav{
     width: 37vw;
     height: 10vh;
     margin-bottom: 3vh;
-
 }
-#derechaCarrito>#totalCarrito>h2{
+#derechaCarrito > #totalCarrito > h2 {
     text-align: center;
 }
-#derechaCarrito>#totalCarrito>p{
+#derechaCarrito > #totalCarrito > p {
     text-align: center;
 }
-#derechaCarrito>#cuestionarioCarrito{
+#cuestionarioCarrito {
     background-color: #5f6f52ff;
     color: #fefae0ff;
     width: 37vw;
@@ -284,27 +231,52 @@ nav{
     display: flex;
     align-items: center;
 }
-#cuestionarioCarrito{
+#cuestionarioCarrito {
     display: flex;
-    flex-direction:column ;
-
+    flex-direction: column;
 }
-#cuestionarioCarrito>input[type="text"], textarea {
+#cuestionarioCarrito > input[type="text"],
+#cuestionarioCarrito > textarea {
     width: 25vw;
-    background-color : #272727; 
+    background-color: #272727;
     color: #5f6f52ff;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #fondoCarrito {
+        flex-direction: column;
+        height: auto;
+    }
 
-  
+    #izquierdaCarrito {
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    #derechaCarrito {
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    #derechaCarrito > #totalCarrito,
+    #cuestionarioCarrito {
+        width: 90%;
+    }
+
+    #cuestionarioCarrito > input[type="text"],
+    #cuestionarioCarrito > textarea {
+        width: 100%;
+    }
 }
 /*Codigo Pagina de Items*/
-#fondoItem1{
+#fondoItem1 {
     background-color: #fefae0ff;
     width: 100%;
     height: 70vh;
     display: flex;
     align-items: center;
 }
-#DerechaPaginaItem1{
+#DerechaPaginaItem1 {
     display: flex;
     width: 35%;
     height: 70vh;
@@ -313,7 +285,7 @@ nav{
     align-items: center;
     justify-content: center;
 }
-#textoPaginaItem1{
+#textoPaginaItem1 {
     margin-left: -3%;
     background-color: #5f6f52ff;
     width: 63%;
@@ -322,34 +294,33 @@ nav{
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
     align-items: center;
-    
 }
-#textoPaginaItem1>h1{
-    margin-top:5% ;
-    margin-left:5% ;
+#textoPaginaItem1 > h1 {
+    margin-top: 5%;
+    margin-left: 5%;
     margin-right: 5%;
 }
-#textoPaginaItem1>h3{
-    margin-left:5% ;
+#textoPaginaItem1 > h3 {
+    margin-left: 5%;
     margin-right: 5%;
 }
-#textoPaginaItem1>h2{
-    margin-left:5% ;
+#textoPaginaItem1 > h2 {
+    margin-left: 5%;
     margin-right: 5%;
 }
-#textoPaginaItem1>button{
-    margin-left:5% ;
+#textoPaginaItem1 > button {
+    margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
 }
-#fondoCarrucel2PaginaItem1{
+#fondoCarrucel2PaginaItem1 {
     background-color: black;
     height: 40vh;
     width: 100%;
     border-bottom: 2px solid white;
     color: white;
 }
-#fondoimagen{
+#fondoimagen {
     background-color: #fefae0ff;
     width: 100%;
     height: 60%;
@@ -357,32 +328,53 @@ nav{
     align-items: center;
     border-radius: 5%;
 }
-/*codigo del loggin*/
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #fondoItem1 {
+        flex-direction: column;
+        height: auto;
+    }
+    #DerechaPaginaItem1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #textoPaginaItem1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
 
-.body{
+    #fondoimagen {
+        height: 40%;
+    }
+}
+/*codigo del loggin*/
+.body {
     background-color: #148f77;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .login-page {
-    width: 360px;
+}
+.login-page {
+    width: 90%; 
+    max-width: 360px; 
     padding: 8% 0 0;
     margin: auto;
-  
-  }
-  .form {
+}
+.form {
     position: -webkit-sticky;
+    position: sticky; 
+    top: 0; 
     z-index: 1;
     background: #5f6f52ff;
-    max-width: 360px;
+    max-width: 90%; 
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    
-  }
-  .form input {
+    border-radius: 10px; 
+}
+.form input {
     font-family: FontAwesome, "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -392,10 +384,9 @@ nav{
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
-  border-radius:10px;
-    
-  }
-  #entrarIndex{
+    border-radius: 10px;
+}
+#entrarIndex {
     font-family: "Titillium Web", sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -404,88 +395,83 @@ nav{
     background: #fefae0ff;
     width: 100%;
     border: 0;
-  border-radius:30px;
+    border-radius: 30px;
     margin: 0px 0px 8px;
     padding: 15px;
     color: #5f6f52ff;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
     cursor: pointer;
-    transition: all 0.2s;
-  
-  
-  }
-  .form button:hover,.form button:focus {
+    transition: all 0.3s ease;
+}
+.form button:hover,
+.form button:focus {
     background: #148f77;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
-  }
-  .form button:active {
+}
+.form button:active {
     transform: translateY(2px);
     box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form .message {
-    
+}
+
+.form .message {
     margin: 6px 6px;
     color: #808080;
     font-size: 11px;
     text-align: center;
     font-weight: bold;
     font-style: normal;
-  
-    
-  
-  }
-  .form .message a {
+}
+.form .message a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 13px;
-  }
-  .form .register-form {
+}
+.form .register-form {
     display: none;
-  }
-  .container {
+}
+.container {
     position: relative;
     z-index: 1;
     max-width: 300px;
     margin: 0 auto;
-  }
-  .container:before, .container:after {
+}
+
+.container:before,
+.container:after {
     content: "";
     display: block;
     clear: both;
-  }
-  .container .info {
+}
+.container .info {
     margin: 50px auto;
     text-align: center;
-  }
-  .container .info h1 {
+}
+.container .info h1 {
     margin: 0 0 15px;
     padding: 0;
     font-size: 36px;
     font-weight: 300;
     color: #1a1a1a;
-  }
-  .container .info span {
+}
+.container .info span {
     color: #4d4d4d;
     font-size: 12px;
-  }
-  .container .info span a {
+}
+.container .info span a {
     color: #000000;
     text-decoration: none;
-  }
-  .container .info span .fa {
+}
+.container .info span .fa {
     color: #EF3B3A;
-  }
-  body {
+}
+body {
     background-color: #148f77;
-    background: -webkit-linear-gradient(right, #148f77,#148f77);
-    background: -moz-linear-gradient(right, #148f77,#148f77);
-    background: -o-linear-gradient(right, #148f77,#148f77);
-    background: linear-gradient(to left, #148f77,#148f77);
+    background: -webkit-linear-gradient(right, #148f77, #148f77);
+    background: -moz-linear-gradient(right, #148f77, #148f77);
+    background: -o-linear-gradient(right, #148f77, #148f77);
+    background: linear-gradient(to left, #148f77, #148f77);
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
-  }
+    -moz-osx-font-smoothing: grayscale;
+}
   
