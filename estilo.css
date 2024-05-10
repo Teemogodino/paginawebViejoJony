@@ -49,7 +49,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #5f6f52ff;
+    background-color: rgba(59,59,67, 1);
     height: 12vh;
 }
 #logo > p {
@@ -63,6 +63,8 @@ nav {
 }
 #logo > div {
     margin-top: 2.5vh;
+    size: 4.5vh;
+    min-block-size: 100px;
 }
 #sep {
     width: 100%;
@@ -114,6 +116,7 @@ nav {
     background-color: #272727;
     border-radius: 5%;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 #objetoVenta1 > img {
     display: flex;
@@ -161,13 +164,32 @@ nav {
     align-items: center;
     flex-direction: row;
 }
-#footer1,
-#footer2 {
+#footer1{
+    width: 33%;
     height: auto;
 }
+#footer1>h3{
+    margin-top: 1vh;
+}
+#footer1Parrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer1Parrafo>p{
+    margin: 0%;
+}
+#mapaGoogle{
+    width: 70%;
+    margin-top: 10px;
+}
 #footer2 {
+    align-items: center;
+    justify-content: center;
     width: 66%;
     height: auto;
+    display: flex;
     border-left: 2px solid white;
 }
 #footer2 > h3 {
@@ -196,6 +218,11 @@ nav {
     width: 100%;
     height: 100vh;
 }
+#itemCarrito1{
+    color: rgba(59,59,67, 1);
+    width: 100%;
+    height: 20%;
+}
 #izquierdaCarrito {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
@@ -205,6 +232,7 @@ nav {
     width: 55vw;
     border: 2px solid #272727;
     margin: 3%;
+    display: flex;
 }
 #derechaCarrito {
     margin-top: 3%;
@@ -293,7 +321,7 @@ nav {
 }
 #textoPaginaItem1 {
     margin-left: -3%;
-    background-color: #5f6f52ff;
+    background-color: rgba(59,59,67, 1);
     width: 63%;
     height: 35vh;
     color: #fefae0ff;
