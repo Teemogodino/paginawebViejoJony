@@ -30,7 +30,7 @@
 }
 /*Codigo de el index*/
 nav {
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
 }
 #menu > a {
@@ -40,6 +40,11 @@ nav {
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
     text-align: center;
+}
+#usuario{
+    width: 15%;
+    height: 100%;
+    background-color: #EF3B3A;
 }
 #menu {
     background-color: #272727;
@@ -52,6 +57,12 @@ nav {
     background-color: rgba(59,59,67, 1);
     height: 12vh;
 }
+#logo{
+    width: 85%;
+    height: auto;
+
+}
+
 #logo > p {
     margin-bottom: 0;
     margin-top: 1vh;
@@ -98,7 +109,48 @@ nav {
     display: flex;
     width: 98%;
     height: auto; 
-    background-color: #27272783;
+    background-color: #2727273a;
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#tituloCategoria{
+    width: 100%;
+    text-align: center;
+    color: #f2f2f2;
+}
+#categoria1{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#categoriaItem1{
+    color:#f2f2f2;
+    font-size: 0.5vh;
+}
+#categoria2{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#categoria3{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#categoriaTOP{
+    display: flex;
+    width: 100%;
+    height: auto; 
     backdrop-filter: blur(4px);
     justify-content: space-around;
     flex-wrap: wrap;
@@ -133,12 +185,20 @@ nav {
     font-size: medium;
 }
 #TextoItem1 > h2 {
-    margin-bottom: 1vh;
+
+    margin:0%;
     font-size: medium;
 }
 #TextoItem1 > p {
-    color: #ff407d;
+    color:#f2f2f2;
     font-size: medium;
+    margin: 0%;
+}
+#infoItem1{
+    color: #f2f2f2; 
+    font-size:small;
+    text-decoration: underline;
+    margin-bottom: 1vh;
 }
 #TextoItem1 > a {
     display: flex;
@@ -155,7 +215,7 @@ nav {
     display: flex;
     width: 100%;
     height: auto; 
-    background-color: black;
+    background-color:rgb(32, 32, 32);
     color: white;
     font-size: 3vh;
     font-family: "Noto Sans Gurmukhi", sans-serif;
@@ -165,7 +225,7 @@ nav {
     flex-direction: row;
 }
 #footer1{
-    width: 33%;
+    width: 25%;
     height: auto;
 }
 #footer1>h3{
@@ -173,9 +233,10 @@ nav {
 }
 #footer1Parrafo{
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     flex-direction: column;
+    margin-left: 10%;
 }
 #footer1Parrafo>p{
     margin: 0%;
@@ -187,7 +248,7 @@ nav {
 #footer2 {
     align-items: center;
     justify-content: center;
-    width: 66%;
+    width: 75%;
     height: auto;
     display: flex;
     border-left: 2px solid white;
