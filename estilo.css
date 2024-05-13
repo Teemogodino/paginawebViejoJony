@@ -44,37 +44,39 @@ nav {
 #usuario{
     width: 15%;
     height: 100%;
-    background-color: #EF3B3A;
+    background-color: rgba(59,59,67, 1);
+    display: flex;
+    justify-content: center;
+    border-left: 1px #f2f2f2 solid;
+    
+}
+#usuario > a{
+    text-decoration: none;
+    color: #f2f2f2;
 }
 #menu {
     background-color: #272727;
 }
 #head {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     background-color: rgba(59,59,67, 1);
-    height: 12vh;
+    height: 6vh;
 }
 #logo{
     width: 85%;
     height: auto;
-
+    justify-content: center;
 }
 
 #logo > p {
-    margin-bottom: 0;
-    margin-top: 1vh;
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
     color: #fefae0ff;
-    font-size: 8.5vh;
-    min-width: 200px;
+    font-size: 4vh;
+    min-width: 40px;
 }
 #logo > div {
-    margin-top: 2.5vh;
-    size: 4.5vh;
     min-block-size: 100px;
 }
 #sep {
@@ -97,7 +99,7 @@ nav {
     text-align: center;
 }
 #tiendaBack {
-    background-image: url(Imagenes/FONDOPAGINA1.png);
+    background: #fefae0ff;
     height: auto; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +111,7 @@ nav {
     display: flex;
     width: 98%;
     height: auto; 
-    background-color: #2727273a;
+    background-color: #38383883;
     backdrop-filter: blur(4px);
     justify-content: space-around;
     flex-wrap: wrap;
@@ -118,6 +120,8 @@ nav {
     width: 100%;
     text-align: center;
     color: #f2f2f2;
+    border-top: 1px #f2f2f2 solid;
+    margin-bottom: 2vh;
 }
 #categoria1{
     display: flex;
@@ -162,11 +166,12 @@ nav {
     font-size: x-large;
     color: #fefae0ff;
     width: 55vh; 
-    min-width: 200px;
+    min-width: 400px;
     max-width: 60vw;
     height: 30vh;
     background-color: #272727;
-    border-radius: 5%;
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
@@ -207,9 +212,12 @@ nav {
     align-self: center;
     justify-content: center;
     text-decoration: none;
-    width: 10vw;
+    width: 100%;
     min-width: 100px;
     font-size: x-large;
+    padding: 10px;
+    border-radius: 5px;
+    
 }
 #footer {
     display: flex;
@@ -230,15 +238,25 @@ nav {
 }
 #footer1>h3{
     margin-top: 1vh;
+    font-size: larger;
 }
-#footer1Parrafo{
+#footer2>h3{
+    margin-top: 1vh;
+    font-size: larger; 
+}
+#footer2{
+    width: 25%;
+    height: auto;
+}
+#footerParrafos{
+    font-size: medium;
     display: flex;
-    align-items:flex-start;
-    justify-content: center;
+    align-items:left;
     flex-direction: column;
     margin-left: 10%;
+    text-align: left;
 }
-#footer1Parrafo>p{
+#footerParrafos>p{
     margin: 0%;
 }
 #mapaGoogle{
@@ -246,16 +264,9 @@ nav {
     margin-top: 10px;
 }
 #footer2 {
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-    height: auto;
-    display: flex;
     border-left: 2px solid white;
 }
-#footer2 > h3 {
-    height: 2vh;
-}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     #menu {
@@ -278,91 +289,158 @@ nav {
     display: flex;
     width: 100%;
     height: 100vh;
+    justify-content: center
 }
-#itemCarrito1{
-    color: rgba(59,59,67, 1);
+#contenedorCarrito{
+    width: 95%;
+    background-color: #38383883;
+    backdrop-filter: blur(4px);
+    display: flex;
+}
+#carrito1{
+    width: 65%;
+    height: 100%;
+    padding: 10px;
+}
+#carrito2{
+    background-color: #272727;
+    height: 100%;
+    width: 35%;
+    border-left:1px #f2f2f2 solid;
+    border-right: 1px #f2f2f2 solid;
+}
+#fotoPerrito{
+    min-width: 225px;
+    min-height: 225px;
+    width: calc(50% - 15px);
+    height: auto;
+}
+#contenedorPerrito{
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100%;
-    height: 20%;
-}
-#izquierdaCarrito {
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: #2727273a;
-    height: 65vh;
-    width: 55vw;
-    border: 2px solid #272727;
-    margin: 3%;
+    height: auto;
     display: flex;
-}
-#derechaCarrito {
-    margin-top: 3%;
-    margin-right: 2vw;
-    display: flex;
-    width: 37vw;
-    height: 65vh;
-    flex-direction: column;
-}
-#derechaCarrito > #totalCarrito {
-    font-family: "Noto Sans Gurmukhi", sans-serif;
-    font-optical-sizing: auto;
-    background-color: #5f6f52ff;
-    color: #fefae0ff;
-    width: 37vw;
-    height: 10vh;
-    margin-bottom: 3vh;
-}
-#derechaCarrito > #totalCarrito > h2 {
-    text-align: center;
-}
-#derechaCarrito > #totalCarrito > p {
-    text-align: center;
-}
-#cuestionarioCarrito {
-    background-color: #5f6f52ff;
-    color: #fefae0ff;
-    width: 37vw;
-    height: 60vh;
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
-#cuestionarioCarrito {
+#contenedorTotal{
     display: flex;
-    flex-direction: column;
 }
-#cuestionarioCarrito > input[type="text"],
-#cuestionarioCarrito > textarea {
-    width: 25vw;
+#totalBarra{
+    background-color: #198754;
+    color: #f2f2f2;
+
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+#ContenedorItemCompra{
+    width: 100%;
+    height: auto;
     background-color: #272727;
-    color: #5f6f52ff;
+    color: #f2f2f2;
 }
+#contenedorCosto{
+    padding: 5px;
+    border-bottom: 1px #f2f2f2 solid;
+    display: flex;
+    justify-content: center;
+    color: #f2f2f2;
+    font-size: large;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#signoPeso{
+    width: auto;
+}
+#cajaBotonesCarrito{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#donativoPerro{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #f2f2f2;
+}
+
+#donativoPerro>p{
+    color: #f2f2f2;
+    text-align: center;
+}
+#checkboxPerro{
+    margin-left: 42%;
+    margin-right: 42%;
+    width: 12%;
+    margin-bottom: 25px;
+}
+/*codigo para el button de dono perrito slider*/
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(182, 182, 182);
+    transition: .4s;
+    border-radius: 10px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 8px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(270deg);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #21cc4c;
+  }
+  
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(1.5em);
+  }
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     #fondoCarrito {
         flex-direction: column;
         height: auto;
     }
-
-    #izquierdaCarrito {
-        width: 90%;
-        margin: 3% auto;
-    }
-
-    #derechaCarrito {
-        width: 90%;
-        margin: 3% auto;
-    }
-
-    #derechaCarrito > #totalCarrito,
-    #cuestionarioCarrito {
-        width: 90%;
-    }
-
-    #cuestionarioCarrito > input[type="text"],
-    #cuestionarioCarrito > textarea {
-        width: 100%;
-    }
 }
+
+
 /*Codigo Pagina de Items*/
 #fondoItem1 {
     background-color: #fefae0ff;
@@ -388,6 +466,28 @@ nav {
     color: #fefae0ff;
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-optical-sizing: auto;
+    align-items: center;
+}
+#ContenedorItemCompra{
+    display: flex;
+
+}
+#imagenItemCompra{
+    width: 20%;
+    height: auto;
+}
+#infoItemCompra{
+    width: 35%;
+    height: auto;
+}
+#precioCalculo{
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#eliminarButton{
+    justify-content: center;
     align-items: center;
 }
 #textoPaginaItem1 > h1 {
@@ -444,8 +544,9 @@ nav {
         height: 40%;
     }
 }
+
 /*codigo del loggin*/
-.body {
+/* .body {
     background-color: #148f77;
     background-repeat: no-repeat;
     background-size: cover;
@@ -568,5 +669,75 @@ body {
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+} */
+
+/*CUESTIONARIO NUEVO :D*/
+#cuerpoLogin{
+    background: linear-gradient(180deg, #ff407d,#ff4e4e );
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
+#login2{
+    background-color: #272727;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    max-width: 750px;
+}
+#login2>h1{
+    text-align: center;
+    margin-bottom: 10%;
+}
+#login2>a{
+    text-decoration: none;
+    text-align: left;
+    color: rgb(53, 53, 255);
+}
+/* .btn-primary {
+    color: #f2f2f2 !important;
+} */
+#botonIngresar{
+    color: #f2f2f2 !important;
+    text-align: center !important;
+}
+#chisteLoggin >p{  
+    color:   #f2f2f2;
+    text-align: center;
+    margin: 0% !important;
+}
+.correct{
+    border: 3px #2ac20896 solid !important;
+}
+.incorrect{
+    border: 3px #c2210891 solid !important;
+}
+
+/* .disabled{
+    background-color: #8a8a8a !important;
+}
+.able{
+    background-color: #409af4 !important;
+
+} */
+.texto-error{
+    color: #ff0000;
+    font-size: .8rem;
+    text-align: right;
+}
+.password-error{
+    color: #ff0000;
+    font-size: .8rem;
+    text-align: right;
+}
+input{
+    outline: none !important; 
+    box-shadow: none !important;
+}
+
