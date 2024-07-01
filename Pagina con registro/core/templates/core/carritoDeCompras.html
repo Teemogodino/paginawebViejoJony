@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+    {% block content %}
+
+        <div id="fondoCarrito">
+          <div id="contenedorCarrito">
+
+            <div id="carrito1">
+                <div id="ContenedorItemCompra">
+                  <div id="imagenItemCompra">
+                    <img src="Imagenes/GLP55-1-600x600-removebg-preview.png" alt="bong_a_la_venta"
+                    width="100"  height="100"></img> 
+                  </div>
+                  <div id="infoItemCompra">
+                  <h3> Bong Happy life</h3>
+                  <p>Categoria: Bong</p>
+                  </div>
+                  <div id="precioCalculo">
+                    <p id="precioUnidad">81.000</p>
+                    <p id="cantidadUnidad"> x3</p>
+                  </div>
+                  <div id="eliminarButton">
+                    <a href="index.html" class="btn btn-danger" role="button" id="eliminarButton" >Eliminar</a>
+                  </div>                 
+                </div>
+            </div>
+            <div id="carrito2">
+
+
+              <h2 id="totalBarra">TOTAL</h2>
+              <div>
+
+              </div>
+              <div id="contenedorCosto">
+                <p  id="signoPeso">$</p>
+                <p id="costoTotal">100000</p>
+              </div>
+              <div id="donativoPerro">
+                  <p> Desea añadir un donativo para el perro?</p>
+                  <div class="form-check">
+                    <label class="switch" id="checkboxPerro">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+              </div>
+            <div id="cajaBotonesCarrito">
+                <a href="index.html" class="btn btn-success" role="button" id="botonIngresar" >Realizar compra</a> 
+                <button type="button" class="btn btn-warning" onclick="getPerrito()">Buscar otro perrito</button>                               
+                <a href="index.html" class="btn btn-danger" role="button" id="botonIngresar" >Vaciar carrito</a>
+            </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+{% endblock %}
+
+        </html>
+<script src="funciones.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

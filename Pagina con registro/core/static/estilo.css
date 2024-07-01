@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+*{
+    margin:0; 
+}
+@keyframes linkSelectA{
+    0%{
+        transform: scale(1); 
+    }
+    25%{
+        transform: scale(1.2);
+        color:#5f6f52ff;   
+    }
+    100%{
+        transform: scale(1);
+        color:#5f6f52ff;
+    }
+}
+@keyframes linkSelectNav{
+    0%{
+
+    }
+    100%{
+        background-color: #fefae0ff;
+    }
+}
+/*Codigo de el index*/
+nav {
+    justify-content: space-evenly;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+#menu > a {
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fefae0ff;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+#usuario{
+    width: 15%;
+    height: 100%;
+    background-color: rgba(59,59,67, 1);
+    display: flex;
+    justify-content: center;
+    border-left: 1px #f2f2f2 solid;
+    
+}
+#usuario > a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+#menu {
+    background-color: #272727;
+}
+#head {
+    display: flex;
+    width: 100%;
+    background-color: rgba(59,59,67, 1);
+    height: 7vh;
+}
+#logo{
+    width: 85%;
+    height: auto;
+    justify-content: center;
+}
+
+#logo > p {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    color: #fefae0ff;
+    font-size: 4vh;
+    min-width: 40px;
+}
+#logo > div {
+    min-block-size: 100px;
+}
+#sep {
+    width: 100%;
+    height: 4vh;
+    background-color: #272727;
+    margin-top: -3.5vh;
+}
+#botonesTienda {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5f6f52ff;
+}
+#botonesTienda > button {
+    width: 33%;
+    height: 8vh;
+    color: #fefae0ff;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+#tiendaBack {
+    background: #fefae0ff;
+    height: auto; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tiendaBack > #tiendaItems {
+    display: flex;
+    width: 100%;
+    height: auto; 
+    background-color: #38383883;
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#tituloCategoria{
+    width: 100%;
+    text-align: center;
+    color: #f2f2f2;
+    border-top: 1px #f2f2f2 solid;
+    margin-bottom: 2vh;
+}
+#categoria1{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#categoriaItem1{
+    color:#f2f2f2;
+    font-size: 0.5vh;
+}
+#categoria2{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#categoria3{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#categoriaTOP{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    backdrop-filter: blur(4px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#objetoVenta1 {
+    display: flex;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    font-size: x-large;
+    color: #fefae0ff;
+    width: 55vh; 
+    min-width: 400px;
+    max-width: 60vw;
+    height: 30vh;
+    background-color: #272727;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 0px 18px;
+}
+#objetoVenta1 > img {
+    display: flex;
+    margin: 3vh 2vh;
+}
+#TextoItem1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+#TextoItem1 > h1 {
+    margin-bottom: 1vh;
+    font-size: medium;
+}
+#TextoItem1 > h2 {
+
+    margin:0%;
+    font-size: medium;
+}
+#TextoItem1 > p {
+    color:#f2f2f2;
+    font-size: medium;
+    margin: 0%;
+}
+#infoItem1{
+    color: #f2f2f2; 
+    font-size:small;
+    text-decoration: underline;
+    margin-bottom: 1vh;
+}
+#TextoItem1 > a {
+    display: flex;
+    background-color: #ff407d;
+    color: #272727;
+    align-self: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    min-width: 100px;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+#footer {
+    display: flex;
+    width: 100%;
+    height: auto; 
+    background-color:rgb(32, 32, 32);
+    color: white;
+    font-size: 3vh;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+#footer1{
+    width: 25%;
+    height: auto;
+}
+#footer1>h3{
+    margin-top: 1vh;
+    font-size: larger;
+}
+#footer2>h3{
+    margin-top: 1vh;
+    font-size: larger; 
+}
+#footer2{
+    width: 25%;
+    height: auto;
+}
+#footer3{
+    width: 25%;
+    height: auto;
+}
+#footer3>h3{
+    margin-top: 1vh;
+    font-size: larger;
+}
+#footerParrafos{
+    font-size: medium;
+    display: flex;
+    align-items:left;
+    flex-direction: column;
+    margin-left: 10%;
+    text-align: left;
+}
+#footerParrafos>p{
+    margin: 0%;
+}
+#mapaGoogle{
+    width: 100%;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+#footer2 {
+    border-left: 2px solid white;
+
+}
+#footer3 {
+    border-right: 2px solid white; 
+}
+#footer4 {
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo > p {
+        font-size: 6vh;
+    }
+    #botonesTienda > button {
+        width: 100%;
+    }
+    #objetoVenta1 {
+        width: 90%;
+    }
+}
+/*Codigo de Carrito de compras*/
+#fondoCarrito {
+    background-color: #fefae0ff;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center
+}
+#contenedorCarrito{
+    width: 100%;
+    background-color: #38383883;
+    backdrop-filter: blur(4px);
+    display: flex;
+}
+#carrito1{
+    width: 65%;
+    height: 100%;
+    padding: 10px;
+}
+#carrito2{
+    background-color: #272727;
+    height: 100%;
+    width: 35%;
+    border-left:1px #f2f2f2 solid;
+    border-right: 1px #f2f2f2 solid;
+}
+#textoPerros{
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    color: #f2f2f2;
+    background-color: #198754; 
+}
+#fotoPerrito{
+    min-width: 225px;
+    min-height: 225px;
+    width: calc(50% - 15px);
+    height: auto;
+}
+#contenedorPerrito{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedorTotal{
+    display: flex;
+}
+#totalBarra{
+    background-color: #198754;
+    color: #f2f2f2;
+
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+#ContenedorItemCompra{
+    width: 100%;
+    height: auto;
+    background-color: #272727;
+    color: #f2f2f2;
+}
+#contenedorCosto{
+    padding: 5px;
+    border-bottom: 1px #f2f2f2 solid;
+    display: flex;
+    justify-content: center;
+    color: #f2f2f2;
+    font-size: large;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#signoPeso{
+    width: auto;
+}
+#cajaBotonesCarrito{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#donativoPerro{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #f2f2f2;
+}
+
+#donativoPerro>p{
+    color: #f2f2f2;
+    text-align: center;
+}
+#checkboxPerro{
+    margin-left: 42%;
+    margin-right: 42%;
+    width: 12%;
+    margin-bottom: 25px;
+}
+/*codigo para el button de dono perrito slider*/
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(182, 182, 182);
+    transition: .4s;
+    border-radius: 10px;
+    min-width: 55px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 8px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(270deg);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #21cc4c;
+  }
+  
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(1.5em);
+  }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #fondoCarrito {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+/*Codigo Pagina de Items*/
+#fondoItem1 {
+    background-color: #fefae0ff;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+#DerechaPaginaItem1 {
+    display: flex;
+    width: 35%;
+    height: 70vh;
+    background-color: #27272760;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+}
+#textoPaginaItem1 {
+    margin-left: -3%;
+    background-color: rgba(59,59,67, 1);
+    width: 63%;
+    height: 35vh;
+    color: #fefae0ff;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    align-items: center;
+}
+#ContenedorItemCompra{
+    display: flex;
+
+}
+#imagenItemCompra{
+    width: 20%;
+    height: auto;
+margin-left: 30px;
+margin-right: -20px;
+}
+#infoItemCompra{
+    width: 35%;
+    height: auto;
+}
+#precioCalculo{
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#precioUnidad{
+    color: #198754;
+    align-items: center;
+    margin-top: 10%;
+
+}
+#cantidadUnidad{
+    color: #198754;
+    align-items: center;
+    margin-top: 10%;
+
+}
+#eliminarButton{
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+#textoPaginaItem1 > h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#textoPaginaItem1 > h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#textoPaginaItem1 > h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#textoPaginaItem1 > button {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+#fondoCarrucel2PaginaItem1 {
+    background-color: black;
+    height: 40vh;
+    width: 100%;
+    border-bottom: 2px solid white;
+    color: white;
+}
+#fondoimagen {
+    background-color: #fefae0ff;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #fondoItem1 {
+        flex-direction: column;
+        height: auto;
+    }
+    #DerechaPaginaItem1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #textoPaginaItem1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    #fondoimagen {
+        height: 40%;
+    }
+}
+
+/*codigo del loggin*/
+/* .body {
+    background-color: #148f77;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-page {
+    width: 90%; 
+    max-width: 360px; 
+    padding: 8% 0 0;
+    margin: auto;
+}
+.form {
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0; 
+    z-index: 1;
+    background: #5f6f52ff;
+    max-width: 90%; 
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px; 
+}
+.form input {
+    font-family: FontAwesome, "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+#entrarIndex {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    outline: 0;
+    background: #fefae0ff;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    margin: 0px 0px 8px;
+    padding: 15px;
+    color: #5f6f52ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.form button:hover,
+.form button:focus {
+    background: #148f77;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+.form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form .message {
+    margin: 6px 6px;
+    color: #808080;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+}
+.form .message a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+}
+.form .register-form {
+    display: none;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.container .info span .fa {
+    color: #EF3B3A;
+}
+body {
+    background-color: #148f77;
+    background: -webkit-linear-gradient(right, #148f77, #148f77);
+    background: -moz-linear-gradient(right, #148f77, #148f77);
+    background: -o-linear-gradient(right, #148f77, #148f77);
+    background: linear-gradient(to left, #148f77, #148f77);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+/*CUESTIONARIO NUEVO :D*/
+#cuerpoLogin{
+    background: linear-gradient(180deg, #ff407d,#ff4e4e );
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login2{
+    background-color: #272727;
+    width: 70%;
+    height: auto;
+    display: flex;
+    color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    max-width: 750px;
+    min-width: 200px;
+}
+#login2>h1{
+    text-align: center;
+    margin-bottom: 10%;
+}
+#login2>a{
+    text-decoration: none;
+    text-align: left;
+    color: rgb(53, 53, 255);
+}
+/* .btn-primary {
+    color: #f2f2f2 !important;
+} */
+#botonIngresar{
+    color: #f2f2f2 !important;
+    text-align: center !important;
+}
+#chisteLoggin >p {
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0% !important;
+    margin-bottom: 2px;
+}
+#textoChiste{
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0% !important;
+}
+.correct{
+    border: 3px #2ac20896 solid !important;
+}
+.incorrect{
+    border: 3px #c2210891 solid !important;
+}
+
+/* .disabled{
+    background-color: #8a8a8a !important;
+}
+.able{
+    background-color: #409af4 !important;
+
+} */
+.texto-error{
+    color: #ff0000;
+    font-size: .8rem;
+    text-align: right;
+}
+.password-error{
+    color: #ff0000;
+    font-size: .8rem;
+    text-align: right;
+}
+input{
+    outline: none !important; 
+    box-shadow: none !important;
+}
+
+#cuerpoCrearUsuario {
+    background: linear-gradient(180deg, #ff407d, #ff4e4e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#crearUsuario {
+    background-color: #272727;
+    width: 70%;
+    height: auto;
+    display: flexbox;
+    color: #f2f2f2;
+    padding: 30px;
+    border-radius: 20px;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+#crearUsuario h1 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#crearUsuario input {
+    margin-bottom: 10px;
+}
+
+#crearUsuario button {
+    margin-top: 10px;
+}
